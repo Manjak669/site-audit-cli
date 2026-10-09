@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site audit: 127.0.0.1:8765</title>
+<style>
+  :root { --ink:#111827; --muted:#6b7280; --line:#e5e7eb; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:#f6f7fb; line-height:1.5; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px 64px; }
+  header { background:#fff; border:1px solid var(--line); border-radius:20px; padding:28px; display:flex; gap:28px; align-items:center; flex-wrap:wrap; }
+  header h1 { margin:0 0 4px; font-size:1.5rem; word-break:break-all; }
+  header p { margin:0; color:var(--muted); }
+  .summary { display:flex; gap:10px; margin-top:12px; flex-wrap:wrap; }
+  .pill { padding:4px 12px; border-radius:999px; font-weight:700; font-size:.85rem; }
+  .cats { display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:12px; margin:20px 0; }
+  .cats div { background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; text-align:center; font-weight:600; font-size:.9rem; }
+  .cats .ring { display:block; margin:0 auto 6px; }
+  .cat { background:#fff; border:1px solid var(--line); border-radius:20px; padding:8px 24px 16px; margin-top:16px; }
+  .cat h2 { display:flex; justify-content:space-between; font-size:1.1rem; }
+  ul { list-style:none; margin:0; padding:0; }
+  li { display:flex; gap:14px; padding:12px 0; border-top:1px solid var(--line); }
+  li p { margin:2px 0 0; color:var(--muted); font-size:.92rem; word-break:break-word; }
+  .badge { flex:0 0 72px; text-align:center; font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:.05em; padding:4px 0; border-radius:8px; height:fit-content; }
+  .fail .badge { background:#fee2e2; color:#b91c1c; } .warn .badge { background:#fef3c7; color:#b45309; }
+  .pass .badge { background:#dcfce7; color:#15803d; } .info .badge { background:#e0f2fe; color:#0369a1; }
+  footer { text-align:center; color:var(--muted); font-size:.85rem; margin-top:32px; }
+  footer a { color:#4f46e5; }
+  @media print { body { background:#fff; } .cat, header { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="ring" width="132" height="132" viewBox="0 0 132 132" role="img" aria-label="Overall score 82 out of 100">
+    <circle cx="66" cy="66" r="58" fill="none" stroke="#e5e7eb" stroke-width="8"/>
+    <circle cx="66" cy="66" r="58" fill="none" stroke="#d97706" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="364.424747816416" stroke-dashoffset="65.59645460695491" transform="rotate(-90 66 66)"/>
+    <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-size="33" font-weight="800" fill="#d97706">82</text>
+  </svg>
+    <div>
+      <h1>http://127.0.0.1:8765/</h1>
+      <p>“Ember &amp; Oak — Wood-fired Café &amp; Bakery”</p>
+      <p>Audited 9 Oct 2026, 19:27 · HTTP 200 · 159 ms to first byte · 11.6 KB HTML</p>
+      <div class="summary">
+        <span class="pill" style="background:#fee2e2;color:#b91c1c">1 to fix</span>
+        <span class="pill" style="background:#fef3c7;color:#b45309">8 to improve</span>
+        <span class="pill" style="background:#dcfce7;color:#15803d">23 passed</span>
+      </div>
+    </div>
+  </header>
+  <div class="cats"><div><svg class="ring" width="84" height="84" viewBox="0 0 84 84" role="img" aria-label="SEO 88 out of 100">
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#e5e7eb" stroke-width="8"/>
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#d97706" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="213.62830044410595" stroke-dashoffset="25.635396053292713" transform="rotate(-90 42 42)"/>
+    <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-size="21" font-weight="800" fill="#d97706">88</text>
+  </svg>SEO</div><div><svg class="ring" width="84" height="84" viewBox="0 0 84 84" role="img" aria-label="Performance 92 out of 100">
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#e5e7eb" stroke-width="8"/>
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#16a34a" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="213.62830044410595" stroke-dashoffset="17.090264035528467" transform="rotate(-90 42 42)"/>
+    <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-size="21" font-weight="800" fill="#16a34a">92</text>
+  </svg>Performance</div><div><svg class="ring" width="84" height="84" viewBox="0 0 84 84" role="img" aria-label="Accessibility 100 out of 100">
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#e5e7eb" stroke-width="8"/>
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#16a34a" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="213.62830044410595" stroke-dashoffset="0" transform="rotate(-90 42 42)"/>
+    <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-size="21" font-weight="800" fill="#16a34a">100</text>
+  </svg>Accessibility</div><div><svg class="ring" width="84" height="84" viewBox="0 0 84 84" role="img" aria-label="Security 31 out of 100">
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#e5e7eb" stroke-width="8"/>
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#dc2626" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="213.62830044410595" stroke-dashoffset="147.4035273064331" transform="rotate(-90 42 42)"/>
+    <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-size="21" font-weight="800" fill="#dc2626">31</text>
+  </svg>Security</div><div><svg class="ring" width="84" height="84" viewBox="0 0 84 84" role="img" aria-label="Best practices 100 out of 100">
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#e5e7eb" stroke-width="8"/>
+    <circle cx="42" cy="42" r="34" fill="none" stroke="#16a34a" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="213.62830044410595" stroke-dashoffset="0" transform="rotate(-90 42 42)"/>
+    <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-size="21" font-weight="800" fill="#16a34a">100</text>
+  </svg>Best practices</div></div>
+  <section class="cat">
+      <h2>SEO <span style="color:#d97706">88</span></h2>
+      <ul><li class="warn">
+        <span class="badge">Improve</span>
+        <div><strong>Canonical URL</strong><p>No &lt;link rel=&quot;canonical&quot;&gt;. Helps avoid duplicate-content issues.</p></div>
+      </li><li class="warn">
+        <span class="badge">Improve</span>
+        <div><strong>robots.txt</strong><p>http://127.0.0.1:8765/robots.txt not found (HTTP 404)</p></div>
+      </li><li class="warn">
+        <span class="badge">Improve</span>
+        <div><strong>XML sitemap</strong><p>No /sitemap.xml and none declared in robots.txt</p></div>
+      </li><li class="warn">
+        <span class="badge">Improve</span>
+        <div><strong>Social preview (Open Graph)</strong><p>Missing og:image. Links shared on Telegram, WhatsApp or Facebook will look plain.</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Page title</strong><p>“Ember &amp; Oak — Wood-fired Café &amp; Bakery” (38 characters)</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Meta description</strong><p>97 characters</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Main heading (H1)</strong><p>“Slow mornings, fire-kissed bread.”</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Indexable</strong><p>No noindex directive</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Amount of text</strong><p>About 356 words</p></div>
+      </li></ul>
+    </section><section class="cat">
+      <h2>Performance <span style="color:#16a34a">92</span></h2>
+      <ul><li class="warn">
+        <span class="badge">Improve</span>
+        <div><strong>Compression</strong><p>No gzip/brotli compression detected.</p></div>
+      </li><li class="info">
+        <span class="badge">Info</span>
+        <div><strong>Cache headers</strong><p>No cache-control header on the HTML</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Server response time</strong><p>159 ms to first byte</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>HTML size</strong><p>11.6 KB</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Render-blocking scripts</strong><p>None in &lt;head&gt;</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Lazy-loaded images</strong><p>No &lt;img&gt; tags</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Image dimensions</strong><p>All images have width and height</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Redirect chain</strong><p>No redirects</p></div>
+      </li></ul>
+    </section><section class="cat">
+      <h2>Accessibility <span style="color:#16a34a">100</span></h2>
+      <ul><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Page language</strong><p>lang=&quot;en&quot;</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Image alt text</strong><p>No &lt;img&gt; tags</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Mobile viewport</strong><p>width=device-width, initial-scale=1</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Heading order</strong><p>20 headings, no skipped levels</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Form labels</strong><p>All 3 fields labelled</p></div>
+      </li></ul>
+    </section><section class="cat">
+      <h2>Security <span style="color:#dc2626">31</span></h2>
+      <ul><li class="fail">
+        <span class="badge">Fix</span>
+        <div><strong>HTTPS</strong><p>Not served over HTTPS. Browsers mark the site as “Not secure”.</p></div>
+      </li><li class="warn">
+        <span class="badge">Improve</span>
+        <div><strong>Content-Security-Policy</strong><p>No CSP header. It protects against injected scripts.</p></div>
+      </li><li class="warn">
+        <span class="badge">Improve</span>
+        <div><strong>X-Content-Type-Options</strong><p>Missing (should be nosniff)</p></div>
+      </li><li class="warn">
+        <span class="badge">Improve</span>
+        <div><strong>Clickjacking protection</strong><p>No X-Frame-Options or CSP frame-ancestors</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Safe external links</strong><p>OK</p></div>
+      </li></ul>
+    </section><section class="cat">
+      <h2>Best practices <span style="color:#16a34a">100</span></h2>
+      <ul><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>HTTP status</strong><p>HTTP 200</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>HTML5 doctype</strong><p>&lt;!doctype html&gt;</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Character encoding</strong><p>Declared</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Favicon</strong><p>Declared</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Inline JavaScript</strong><p>0.0 KB of inline script</p></div>
+      </li><li class="pass">
+        <span class="badge">Passed</span>
+        <div><strong>Theme colour</strong><p>#1c1410</p></div>
+      </li></ul>
+    </section>
+  <footer>Generated by <a href="https://github.com/Manjak669/site-audit-cli">site-audit-cli</a> · Built by <a href="https://moonwave-studio.com">MoonWave</a></footer>
+</div>
+</body>
+</html>

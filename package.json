@@ -1,0 +1,30 @@
+{
+  "name": "site-audit-cli",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI that audits any web page for SEO, performance, accessibility and security, with a shareable HTML report.",
+  "type": "module",
+  "bin": {
+    "site-audit": "bin/site-audit.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "keywords": [
+    "seo",
+    "audit",
+    "lighthouse",
+    "accessibility",
+    "cli",
+    "website"
+  ],
+  "author": "MoonWave (https://moonwave-studio.com)",
+  "license": "UNLICENSED",
+  "private": true
+}
